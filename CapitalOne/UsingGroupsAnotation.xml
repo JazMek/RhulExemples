@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Testing">
+    <test verbose="2" preserve-order="true" name="/Users/karimmekdoud/IdeaProjects/rahulchetyExemplesTestNG/CapitalOne">
+<!--  This is used for regression testing when we have to run all the test cases -->
+      <groups>
+          <run >
+<!--              Smoke Testing using Groups Annotation-->
+             <include name="Smoke Testing"/>
+<!--              We can us exclude to -->
+<!--              <exclude name="Smoke Testing"/>-->
+          </run>
+      </groups>
+        <packages>
+       <package  name="carLoan"> </package>
+       
+       <package name="homeLoan"> </package>
+
+       <package name="businesLoan"> </package>
+
+       <package name="personalLoan"></package>
+
+   </packages>
+    </test>
+</suite>

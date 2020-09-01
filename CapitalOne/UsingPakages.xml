@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Testing">
+    <test verbose="2" preserve-order="true" name="/Users/karimmekdoud/IdeaProjects/rahulchetyExemplesTestNG/CapitalOne">
+<!--  This is used for regression testing when we have to run all the test cases -->
+   <packages>
+       <package  name="carLoan"> </package>
+       
+       <package name="homeLoan"> </package>
+
+       <package name="businesLoan"> </package>
+
+       <package name="personalLoan"></package>
+
+   </packages>
+    </test>
+</suite>

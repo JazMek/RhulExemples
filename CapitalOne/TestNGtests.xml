@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/karimmekdoud/IdeaProjects/rahulchetyExemplesTestNG/CapitalOne">
+        <classes><class name="carLoan.FinanceACar">
+            <methods><include name="Individual_Finance_Test"/>
+                <include name="Joint_Finance_Test"/></methods>
+        </class><class name="carLoan.SearchCars">
+            <methods><include name="search_Used_Cars_Test"/>
+                <include name="search_New_Cars_Test"/>
+                <include name="search_Used_And_New_Cars_Test"/>
+                <include name="used_And_New_Cars_Models_Test"/>
+            </methods>
+        </class>
+            <class name="homeLoan.SearchHome">
+                <methods>
+                    <include name="search_Old_Homes_Test"/>
+                    <include name="search_New_Homes_Test"/>
+                    <include name="search_Old_And_New_Homes_Test"/>
+                </methods>
+            </class>
+            <class name="personalLoan.PersonalLoanQualifications">
+                <methods>
+                    <include name="personal_Loan_Qualifications_Test"/>
+                </methods>
+            </class>
+            <class name="businesLoan.QualificationsForBusinessLoan">
+                <methods>
+                    <include name="smale_Business_Loan_Test"/>
+                    <include name="medium_Business_Loan_Test"/>
+                    <include name="large_Business_Loan_Test"/>
+                    <include name="very_Large_Business_Loan_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
